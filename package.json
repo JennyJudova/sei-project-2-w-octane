@@ -1,8 +1,8 @@
 {
-  "name": "gist-octane-app",
+  "name": "sei-project-2-w-octane",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for gist-octane-app goes here",
+  "description": "My first Ember Octane App",
   "repository": "",
   "license": "MIT",
   "author": "",
