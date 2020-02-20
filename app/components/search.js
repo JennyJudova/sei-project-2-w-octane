@@ -12,13 +12,13 @@ export default class SearchComponent extends Component {
 
   @action
   updateCity(event) {
+    console.log("update city", event.target.value);
     this.city = event.target.value;
-    console.log(this.city);
   }
 
   @action
   async handleSubmit() {
-    console.log(this.city);
+    console.log("handle submit", this.city);
     // @ts-ignore
     // await this.args.sendMessage(this.body);
     this.city = "";

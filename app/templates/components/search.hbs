@@ -1,9 +1,11 @@
 <div className="container">
   <form className="home" {{action this.handleSubmit on="submit"}}>
     <p className="subtitle is-2 has-text-centered">Where do you live?</p>
-    <input className="input" placeholder="Type in your city" value={{this.city}}
-      onchange={{action (mut this.city) value="target.value"}} type="text">
-    <button className="button city" type="submit">HIT ME!</button>
+    <input className="input" placeholder="Type in your city" value={{this.city}} onchange={{action this.updateCity}}
+      type="text">
+    <button className="button city {{if this.isDisabled 'grey' 'green'}} " type="submit">
+      HIT ME!
+    </button>
   </form>
   <div className="flying">
     <img className="catGif" src="http://giphygifs.s3.amazonaws.com/media/sIIhZliB2McAo/giphy.gif" alt="gif of a cat">
