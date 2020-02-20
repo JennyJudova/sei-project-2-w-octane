@@ -7,9 +7,10 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route("search", {
-    // eslint-disable-next-line ember/routes-segments-snake-case
-    path: ":cityId"
+  this.route("search");
+
+  this.route('city', {
+    path: ':cityId'
   });
 });
 
