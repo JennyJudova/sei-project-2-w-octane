@@ -2,8 +2,8 @@
   <h2>The weather in {{@weather.name}}</h2>
   {{log @weather}}
   <h3>The tempterature will be between:</h3>
-  <p>{{@weather.main.temp_min}}°C - {{@weather.main.temp_max}}°C</p>
+  <p>{{format-temp @weather.main.temp_min}}°C - {{format-temp @weather.main.temp_max}}°C</p>
   <div className="animal">
-    <div className="Drizzle">{{@weather.weather.main}}</div>
+    <div className="Drizzle">{{@weather.weather.[0].main}}</div>
   </div>
 </section>
