@@ -11,6 +11,10 @@ Router.map(function() {
 
   this.route('city', {
     path: ':cityId'
+  }, function() {
+    this.route('country', {
+      path: ':countryId'
+    });
   });
 });
 

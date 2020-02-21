@@ -50,5 +50,8 @@ module.exports = function(environment) {
   if (environment === "production") {
   }
 
+  ENV.weatherAPI = "ec1164d2d65b85bad589802965922278"; // process.env.EMBER_APP_WEATHER_ACCESS_KEY;
+  ENV.newsAPI = "af9c27fe2c3b443ca3d64aa334eb25e2"; // process.env.EMBER_APP_NEWS_ACCESS_KEY
+
   return ENV;
 };
