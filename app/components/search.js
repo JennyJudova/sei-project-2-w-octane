@@ -21,6 +21,7 @@ export default class SearchComponent extends Component {
     console.log("handle submit", this.city);
     // @ts-ignore
     // await this.args.sendMessage(this.body);
-    this.city = "";
+    this.city = event.target.value;
+    return this.city;
   }
 }

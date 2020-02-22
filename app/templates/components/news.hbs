@@ -1,4 +1,12 @@
 <div className="news">
   <h2>Local News</h2>
   {{log @news}}
+  {{#each @news.articles as |article|}}
+  <li>
+    {{article.title}}
+    <a href={{article.url}}>
+      Full Story
+    </a>
+  </li>
+  {{/each}}
 </div>

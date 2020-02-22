@@ -6,6 +6,9 @@
     <button className="button city {{if this.isDisabled 'grey' 'green'}} " type="submit">
       HIT ME!
     </button>
+    <LinkTo @route="city" @params={{this.city}} data-team-id={{this.city}}>
+      got to city
+    </LinkTo>
   </form>
   <div className="flying">
     <img className="catGif" src="http://giphygifs.s3.amazonaws.com/media/sIIhZliB2McAo/giphy.gif" alt="gif of a cat">
@@ -13,7 +16,7 @@
 </div>
 
 
-{{!-- <LinkTo @route="search" @model={{this.city}} data-team-id={{this.city}}>
+{{!-- <LinkTo @route="city" @model={{this.city}} data-team-id={{this.city}}>
     <div> got to city
     </div>
   </LinkTo> --}}
