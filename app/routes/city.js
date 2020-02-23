@@ -1,4 +1,5 @@
 import Route from "@ember/routing/route";
+import fetch from "fetch";
 import ENV from "jj-octane-template/config/environment";
 
 export default class CityRoute extends Route {
