@@ -1,7 +1,7 @@
 <div className="news">
   <h2>Local News</h2>
   {{log @news}}
-  {{#each @news.articles as |article|}}
+  {{#each @news as |article|}}
   <li>
     {{article.title}}
     <a href={{article.url}}>
@@ -10,3 +10,25 @@
   </li>
   {{/each}}
 </div>
+
+
+{{!--
+<Rentals::Filter @rentals={{@rentals}} @query={{this.query}} as |results|>
+  {{#each results as |rental|}}
+  <li>
+    <Rental @rental={{rental}} />
+  </li>
+  {{/each}}
+</Rentals::Filter> --}}
+
+
+{{!-- <News @articles={{filter-articles @news.articles}}>
+    {{#each @articles as |article|}}
+    <li>
+      {{article.title}}
+      <a href={{article.url}}>
+        Full Story
+      </a>
+    </li>
+    {{/each}}
+  </News> --}}
